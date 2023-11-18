@@ -1,0 +1,118 @@
+/* login.css */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh; /* Establece la altura al 100% de la ventana principal */
+  }
+  
+  .login-container {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+    
+  .logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .login-input {
+    margin: 10px 0;
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-buttons {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(50% - 5px); 
+  }
+  
+  .login-button:hover {
+    background-color: #ffd32a;
+  }
+  
+  .login-text{
+    text-align: center;
+  }
+
+  .error-message {
+    color: red;
+    font-size: small;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .password-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-input-container {
+    position: relative;
+  }
+  
+  .password-input {
+    margin: 10px 0;
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Ajusta la posición del ícono */
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+
+
+  @media screen and (max-width: 345px) {
+    .login-buttons {
+      flex-direction: column; /* Cambia la dirección del flexbox a columna */
+      align-items: center; /* Centra los botones horizontalmente */
+    }
+  
+    .login-button {
+      width: 100%; /* Ocupa el ancho completo del contenedor */
+      margin-top: 10px; /* Agrega un espacio entre los botones */
+    }
+  }

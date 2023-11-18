@@ -1,0 +1,64 @@
+.body {
+    background: #fff;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .contenido {
+    flex: 1;
+    text-align: left;
+    color: #000;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .desciption {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  .imagen {
+    flex: 1;
+    text-align: right;
+  }
+  
+  img {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width: 600px) {
+    .contenedor {
+        flex-direction: column; /* Cambia la dirección del eje principal a columna */
+        text-align: center; /* Centra el texto en la vista vertical */
+    }
+
+    .contenido,
+    .imagen {
+        flex: none; /* Deshabilita la expansión para que no ocupen todo el ancho */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Agrega espacio entre contenido e imagen */
+        text-align: center; /* Centra el texto e imagen en la vista horizontal */
+    }
+
+    img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+}
+  

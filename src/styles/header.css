@@ -1,0 +1,131 @@
+/* header.css */
+/* Estilos para el cuerpo de la página */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+/* Estilos para el contenedor del encabezado */
+  header {
+    background-color: #0173e6; 
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Estilos para el logotipo */
+  .logo img {
+    margin-left: 140px;
+    width: 124px; /* Ajusta el tamaño del logo según tus necesidades */
+  }
+  
+  /* Estilos para la navegación */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 19px;
+  }
+  
+  nav ul li {
+    margin-right: 40px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 100px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Estilos para los botones de navegación */
+  nav a:hover {
+    color: #ffd32a; /* Cambia el color al pasar el mouse por encima */
+  }
+  
+  @media screen and (max-width: 1050px) {
+
+      /* Ocultar el menú por defecto */
+  .closed-menu {
+    display: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  /* Estilos para el icono de hamburguesa */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    margin-right: 100px;
+    position: relative;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  /* Cambiar las barras a una X cuando el menú está abierto */
+  .open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Estilos para el menú abierto */
+  .nav.open-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 115, 230, 0.95); /* Fondo más claro */
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav.open-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos horizontalmente */
+  }
+
+  .nav.open-menu li {
+    margin: 10px 0; /* Espacio entre elementos */
+  }
+
+  .logo img {
+      margin-left: 25px;
+      width: 110px; 
+    }
+  }
+
+  @media screen and (max-width: 407px) {
+    .menu-icon{
+      margin-right: 40px;
+    }
+  }

@@ -1,0 +1,10 @@
+*{
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 100px;
+}
